@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CourtSide — Stats Tools</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css" media="(max-width:899px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width:900px)">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-brand">
+            <a href="index.html"><img src="images/logo.png" alt="CourtSide logo" width="48" height="48"></a>
+            <h1>CourtSide</h1>
+        </div>
+
+
+        <nav aria-label="Main navigation">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="stats.html">Stats Tools</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="card">
+            <h2>Stats Tools</h2>
+            <p>Use the controls below to sort or filter sample player stats.</p>
+
+
+            <label for="sortSelect">Sort by</label>
+            <select id="sortSelect">
+                <option value="ppg">Points (PPG)</option>
+                <option value="rpg">Rebounds (RPG)</option>
+                <option value="apg">Assists (APG)</option>
+            </select>
+
+
+            <button id="showTop">Show Top 5</button>
+
+
+            <div id="statsOutput" class="card-grid"></div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="year3"></span> CourtSide. <a href="references.html">References</a></p>
+    </footer>
+
+
+    <script src="data/players.js"></script>
+    <script src="scripts/app.js" defer></script>
+</body>
+
+</html>

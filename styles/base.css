@@ -1,0 +1,150 @@
+:root {
+    --accent: #0B3D91;
+    --accent-2: #FFC857;
+    --bg: #F6F8FB;
+    --card: #ffffff;
+    --text: #0D1B2A;
+    --muted: #4B5563;
+    --radius: 10px;
+}
+
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Arial;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: var(--card);
+    border-bottom: 1px solid #e6eef9
+}
+
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.site-brand h1 {
+    font-size: 1.15rem;
+    margin: 0;
+    color: var(--accent)
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--muted)
+}
+
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 18px
+}
+
+.card {
+    background: var(--card);
+    padding: 16px;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 18px rgba(11, 61, 145, 0.04);
+    margin-bottom: 18px
+}
+
+.hero {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding: 18px;
+    border-radius: var(--radius);
+    overflow: hidden
+}
+
+.hero img {
+    max-width: 420px;
+    border-radius: 8px
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px
+}
+
+.player-card {
+    padding: 12px;
+    border-radius: 8px;
+    background: #f9fbff;
+    border: 1px solid #eef5ff
+}
+
+.player-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px
+}
+
+button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer
+}
+
+button.secondary {
+    background: var(--accent-2);
+    color: #000
+}
+
+form label {
+    display: block;
+    margin-top: 8px
+}
+
+input,
+select,
+textarea {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #dbe9ff;
+    width: 100%;
+    max-width: 100%
+}
+
+footer {
+    max-width: 1100px;
+    margin: 12px auto;
+    padding: 0 18px;
+    color: var(--muted)
+}
+
+
+/* Utility */
+.hidden {
+    display: none
+}

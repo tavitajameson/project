@@ -1,0 +1,16 @@
+/* Mobile-first adjustments */
+.hero {
+    flex-direction: column
+}
+
+.site-header {
+    padding: 10px
+}
+
+.nav {
+    gap: 8px
+}
+
+.card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
+}
