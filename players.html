@@ -1,63 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>CourtSide — Players</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tavita Jameson">
+    <meta name="description" content="Explore top NBA players, stats, and profiles at NBA Fan Hub.">
+    <title>NBA Fan Hub | Players</title>
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/small.css" media="(max-width:899px)">
-    <link rel="stylesheet" href="styles/large.css" media="(min-width:900px)">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="site-brand">
-            <a href="index.html"><img src="images/logo.png" alt="CourtSide logo" width="48" height="48"></a>
-            <h1>CourtSide</h1>
-        </div>
-
-
-        <nav aria-label="Main navigation">
-            <ul class="nav">
+    <header>
+        <h1>NBA Fan Hub</h1>
+        <nav>
+            <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="players.html">Players</a></li>
-                <li><a href="stats.html">Stats Tools</a></li>
-                <li><a href="references.html">References</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="players.html" class="active">Players</a></li>
             </ul>
         </nav>
     </header>
 
-
     <main>
-        <section class="controls card">
-            <label for="playerSearch">Search players</label>
-            <input id="playerSearch" name="playerSearch" type="search" placeholder="Search by name or team">
-
-
-            <label for="teamFilter">Filter by team</label>
-            <select id="teamFilter">
-                <option value="">All teams</option>
-            </select>
+        <section class="page-header">
+            <h2>NBA Players</h2>
+            <p>Browse some of the most notable players in the league.</p>
         </section>
 
-
-        <section class="players card">
-            <h2>Players</h2>
-            <div id="playersContainer" class="card-grid"></div>
+        <section class="player-list" id="playerList">
+            <!-- Dynamic player cards will be inserted here by JavaScript -->
         </section>
-
-
     </main>
 
-
     <footer>
-        <p>&copy; <span id="year2"></span> CourtSide. <a href="references.html">References</a></p>
+        <p>&copy; 2025 NBA Fan Hub</p>
+        <a href="siteplan.html">Site Plan</a>
     </footer>
 
-
-    <script src="data/players.js"></script>
-    <script src="scripts/app.js" defer></script>
+    <script src="scripts/players.js"></script>
 </body>
 
 </html>

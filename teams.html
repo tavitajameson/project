@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Tavita Jameson">
-    <meta name="description" content="NBA Fan Hub – your go-to destination for NBA teams, players, and league insights.">
-    <title>NBA Fan Hub</title>
+    <meta name="description" content="Explore all NBA teams, their histories, and key information at NBA Fan Hub.">
+    <title>NBA Fan Hub | Teams</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-
 </head>
 
 <body>
@@ -19,31 +18,29 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="teams.html">Teams</a></li>
+                <li><a href="teams.html" class="active">Teams</a></li>
                 <li><a href="players.html">Players</a></li>
             </ul>
         </nav>
     </header>
 
-
     <main>
-        <section class="hero">
-            <h2>Welcome to NBA Fan Hub</h2>
-            <p>Your central space for NBA news, stats, and fan resources.</p>
+        <section class="page-header">
+            <h2>NBA Teams</h2>
+            <p>Browse all 30 NBA teams and learn more about each franchise.</p>
         </section>
 
-
-        <section class="intro">
-            <h3>Explore the League</h3>
-            <p>Learn about teams, discover player stats, and stay connected with the world of basketball.</p>
+        <section class="team-list" id="teamList">
+            <!-- Dynamic team cards will be inserted here by JavaScript -->
         </section>
     </main>
-
 
     <footer>
         <p>&copy; 2025 NBA Fan Hub</p>
         <a href="siteplan.html">Site Plan</a>
     </footer>
+
+    <script src="scripts/team.js"></script>
 </body>
 
 </html>
